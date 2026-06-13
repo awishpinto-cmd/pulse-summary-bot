@@ -47,7 +47,12 @@ jobs:
     # NEW STEP: Compile live projects data metadata
     - name: Run Repo Fetcher Script
       run: python fetch_repos.py
-
+    - name: Run Weather Condition Threshold Check
+      env:
+        SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+        RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+        EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+      run: python weather_alert.py
     # NEW STEP: Commit the generated JSON structure back into your repository branch automatically
     - name: Commit and Push Updated Projects JSON
       run: |
