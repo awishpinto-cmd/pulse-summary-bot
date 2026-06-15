@@ -1,18 +1,18 @@
 [
     {
-        "name": "folio",
-        "description": "An automated technical engineering project.",
-        "url": "https://github.com/awishpinto-cmd/folio",
-        "stars": 0,
-        "language": "CSS",
-        "topics": []
-    },
-    {
         "name": "pulse-summary-bot",
         "description": "An automated technical engineering project.",
         "url": "https://github.com/awishpinto-cmd/pulse-summary-bot",
         "stars": 0,
         "language": "Python",
+        "topics": []
+    },
+    {
+        "name": "folio",
+        "description": "An automated technical engineering project.",
+        "url": "https://github.com/awishpinto-cmd/folio",
+        "stars": 0,
+        "language": "CSS",
         "topics": []
     }
 ]
